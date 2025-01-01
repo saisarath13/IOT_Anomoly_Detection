@@ -1,12 +1,12 @@
 # Anomaly Detection
 
 ## Overview
-**Anomaly Detection** is a Flask-based web application designed to identify anomalies in temperature data using a trained TensorFlow autoencoder model. The application integrates MQTT for real-time data simulation and is deployed on **Google Cloud Platform (GCP)** for scalable cloud-based execution.
+**Anomaly Detection** is a web application designed to identify anomalies in temperature data using a trained TensorFlow autoencoder model. The application integrates for real-time data simulation and is deployed on **Google Cloud Platform (GCP)** for scalable cloud-based execution.
 
 ---
 
 ## Features
-- **Real-time Monitoring**: Captures and plots temperature data in real-time via MQTT.
+- **Real-time Monitoring**: Captures and plots temperature data in real-time.
 - **Anomaly Detection**: Uses an autoencoder to detect anomalies in temperature readings.
 - **Interactive Web Interface**: Users can input temperature data and receive anomaly detection results.
 - **Dockerized Deployment**: Easy setup and deployment using Docker.
@@ -25,7 +25,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/anomaly-detection.git
+   git clone https://github.com/saisarath13/anomaly-detection.git
    cd anomaly-detection
    ```
 
@@ -80,10 +80,10 @@
    ```bash
    python simulate_temperature_data.py
    ```
-   - Simulates temperature readings and publishes them to the MQTT topic `iot/temperature`.
+   - Simulates temperature readings and publishes them to the topic `iot/temperature`.
 
 2. Real-time monitoring:
-   - The application listens to the MQTT broker and updates a live plot with temperature data.
+   - The application listens and updates a live plot with temperature data.
 
 ---
 
@@ -91,7 +91,7 @@
 ```
 anomaly-detection/
 ├── app.py                # Main Flask application
-├── simulate_temperature_data.py  # MQTT data simulator
+├── simulate_temperature_data.py
 ├── requirements.txt      # Dependencies
 ├── Dockerfile            # Docker configuration
 ├── templates/
@@ -115,7 +115,6 @@ anomaly-detection/
 ## Technologies Used
 - **Flask**: Web framework for serving the application.
 - **TensorFlow**: Used for building and training the autoencoder model.
-- **MQTT**: Real-time data simulation and communication.
 - **Docker**: Containerization for deployment.
 - **GCP Cloud Run**: Scalable cloud hosting.
 
@@ -136,6 +135,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 For inquiries or contributions, please reach out to:
 - **Email**: sarathk1307@gmail.com
-- **GitHub**: [Your GitHub Profile](https://github.com/your-profile)
+- **GitHub**: https://github.com/saisarath13/
 
 
